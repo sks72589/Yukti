@@ -63,7 +63,7 @@ def whatsapp(send_data):
              to='whatsapp:<person whastapp number>'
          )
     print(send_data)
-    print(message.sid)    
+    print(message.sid)      
 
 if __name__ == "__main__": 
     whatsapp(string(scanning(Get_URL(TEXT))))
