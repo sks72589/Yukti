@@ -51,16 +51,16 @@ def whatsapp(send_data):
     from twilio.rest import Client
     
     
-    account_sid = 'AC0001c84930a299ec3b0eb451e0cea11b'
-    auth_token = '6f7d8000c41b081ace376d2479473c7d'
+    account_sid =<account_sid>
+    auth_token = <account_token>
     client = Client(account_sid, auth_token)
     
     message = client.messages \
         .create(
     
-             from_='whatsapp:+14155238886',
+             from_='whatsapp:<twilio_number>',
              body= "The link you provided to us  " + str(Get_URL(TEXT)) + " is safe link",
-             to='whatsapp:+917290928476'
+             to='whatsapp:<person whastapp number>'
          )
     print(send_data)
     print(message.sid)    
