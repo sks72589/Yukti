@@ -28,7 +28,7 @@ def scanning(URL):
     import nest_asyncio
     flag=0
     nest_asyncio.apply()
-    client = vt.Client("d35dcc5f87ac8ee7f7a0cdb6c7930e1c00419cd293652773a4b8f6608cf33ea4")   
+    client = vt.Client("<API KEY>")   
     url_id = vt.url_id(URL)
     url = client.get_object("/urls/{}".format(url_id))
     result = url.last_analysis_stats 
@@ -59,7 +59,7 @@ def whatsapp(send_data):
         .create(
     
              from_='whatsapp:<twilio_number>',
-             body= "The link you provided to us  " + str(Get_URL(TEXT)) + " is safe link",
+             body= send_data + str(Get_URL(TEXT)),
              to='whatsapp:<person whastapp number>'
          )
     print(send_data)
