@@ -108,7 +108,7 @@ def credit_function():
     string4 = decisiontree_Machine(X,y, News)
     string5 = logisticreg_machine(X,y, News) 
     string6 = " "
-    if string1== string2 or string3== string4 or string5==string1 or string2==string3 or string4==string5:
+    if string1== "FAKE" or string2== "FAKE" or string3=="FAKE" or string4=="FAKE" or string5=="FAKE":
         string6="FAKE NEWS"
     else:
         string6="REAL NEWS"
@@ -118,16 +118,16 @@ def whatsapp():
     from twilio.rest import Client
     
     
-    account_sid = 'AC0001c84930a299ec3b0eb451e0cea11b'
-    auth_token = '6f7d8000c41b081ace376d2479473c7d'
+    account_sid = <account_sid>
+    auth_token = <auth_token>
     client = Client(account_sid, auth_token)
     
     message = client.messages \
         .create(
     
-             from_='whatsapp:+14155238886',
+             from_='whatsapp:<Twilio Service number>',
              body=" This news " + News +" is  " + credit_function(),
-             to='whatsapp:+917290928476'
+             to='whatsapp:<Person Whatsapp Number>'
          )
     
     print(message.sid)
