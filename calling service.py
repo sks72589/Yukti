@@ -30,7 +30,6 @@ def voice():
 
 @app.route("/record", methods=['GET', 'POST'])
 def record():
-    """Returns TwiML which prompts the caller to record a message"""
     response = VoiceResponse()
 
     response.say('Hello. Please leave a message after the beep.')
@@ -43,15 +42,15 @@ def message(text):
     from twilio.rest import Client
     
 
-    account_sid = 'AC0001c84930a299ec3b0eb451e0cea11b'
-    auth_token = '6f7d8000c41b081ace376d2479473c7d'
+    account_sid = <account_sid>
+    auth_token = <auth_token>
     client = Client(account_sid, auth_token)
     
     message = client.messages \
         .create(
              body=text,
-             messaging_service_sid='MG0fbdccdb68e3ff4ec2c28b37551f701e',
-             to='+918092040464'
+             messaging_service_sid=<messaging_service_sid>,
+             to=<mobile no>
          )
     
     print(message.sid)    
@@ -133,7 +132,7 @@ def choice5 ():
 
 @app.route('/gather', methods=['GET', 'POST'])
 def gather():
-    """Processes results from the <Gather> prompt in /voice"""
+   
     resp = VoiceResponse()
 
     if 'Digits' in request.values:        
