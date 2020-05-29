@@ -24,7 +24,7 @@ def voice():
     gather = Gather(num_digits=1, action='/gather')
     gather.say("Hello, For medical facility, press 1. For testing information, press 2. For do's and dont's, press 3. For latest governmental updates, press 4. For services launched by government, press 5."  )
     resp.append(gather)
-    resp.redirect('/voice')
+    resp.redirect('/voice')  
 
     return str(resp)
 
