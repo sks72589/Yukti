@@ -18,7 +18,7 @@ $city_name= "Citywise";
 	</head>
     <body>
     	<header id="header">
-    		<p>Yukti</p>
+    		<p>Covid Information Forum</p>
     	</header>
 
 
@@ -118,9 +118,9 @@ $city_name= "Citywise";
 			</section>
 		</section>
 		<!-- Footer -->
-		<footer id="footer">
-			<!-- <p>Copyright</p>			 -->
-		</footer>
+		<!--<footer id="footer">
+			 <p>Copyright</p>			
+		</footer> -->
 
 
 

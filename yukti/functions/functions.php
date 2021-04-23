@@ -1,6 +1,6 @@
 <?php 
 // After uploading to online server, change this connection accordingly
-$db_con = mysqli_connect("localhost","root","","yukti");
+$db_con = mysqli_connect("localhost","admin","aDMIN","yukti");
 
 if (mysqli_connect_errno())
   {

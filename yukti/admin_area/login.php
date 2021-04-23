@@ -35,9 +35,9 @@ include("includes/db.php");
 		$email = ($_POST['email']);
 		$pass = ($_POST['password']);
 	
-	$sel_user = "select * from admins where user_email='$email' AND user_pass='$pass'";
+	$sel_user = "select * from admin where admin_email='$email' AND admin_pass='$pass'";
 	
-	$run_user = mysqli_query($con, $sel_user)or die("Error: " . mysqli_error($con)); 
+	$run_user = mysqli_query($db_con, $sel_user)or die("Error: " . mysqli_error($db_con)); 
 	
 	 $check_user = mysqli_num_rows($run_user); 
 	
@@ -57,16 +57,4 @@ include("includes/db.php");
 	
 	}
 	
-	
-	
-	
-	
-
-
-
-
-
-
-
-
 ?>
