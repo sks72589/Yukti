@@ -1,7 +1,7 @@
 <?php 
 // After uploading to online server, change this connection accordingly
 
- $db_con = mysqli_connect("localhost","admin","aDMIN","yukti");
+ $db_con = mysqli_connect("localhost","admin","aDMIN","cif");
 
 if (mysqli_connect_error())
   {

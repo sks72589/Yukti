@@ -5,6 +5,7 @@ a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, sa
 	margin: 0;
 	padding: 0;
 	border: 0;
+	vertical-align: baseline;
 }
 html
 {
@@ -15,7 +16,7 @@ html
 body
 {
 	width: 100%;
-	height: 100% ;
+	/*height: auto;*/
 	padding: 0;
 	margin: 0;
 	position: relative;
@@ -60,7 +61,7 @@ input::placeholder
 	{
 		width: 100%;
 		height: 60px;
-		position:relative;
+		position: relative;
 		margin: auto;
 		font-family: 'Playball', cursive;
 		background-color:#BDD8F1;
@@ -68,6 +69,7 @@ input::placeholder
 
 	#header p
 	{
+
 		font-family: 'Playball', cursive;
 		font-size: 3em;
 		/*width: 80px;*/
@@ -81,23 +83,209 @@ input::placeholder
 	#main-holder
 	{
 		width: 100%;
-		height:100%;
+		height: 800px;
 		position: relative;
-		margin: auto;
-		/* background-color: grey; */
-		display: inline-flex;
+		/*margin: auto;*/
+		/*background-color: grey;*/
+		display: flex;
+		/*display: inline-flex;*/
 	}
 	/*Partition 1 start*/
 	#partition1
 	{
 		position: relative;
-		width:20% ;
+		width:25% ;
 		margin: auto;
-		height: 850px;
-		/* background-color: aqua; */
+		height: 800px;
 		/*box-shadow: inset 1px 1px 1px 1px red;*/
 		
 	}
+	.precaution
+	{
+		height: 46%;
+		width: 90%;
+		position: relative;
+		margin-top: -3%;
+		margin-right: auto;
+		margin-left: auto; 
+		margin-bottom: auto;
+		border-radius: 10px;
+		/*box-shadow: inset 1px 1px 1px 1px #62fdbb;*/
+		background-color:#BDD8F1;
+		border: 8px solid white;
+		overflow-x:hidden;
+
+	}
+	.precaution h2
+	{
+		text-align: center;
+	}
+	.live-update
+	{
+		height: 46%;
+		width: 90%;
+		margin-top: -2%;
+		margin-right: auto;
+		margin-left: auto; 
+		margin-bottom: auto;
+		position: relative;
+		border-radius: 8px;
+		background-color:#BDD8F1;
+		border: 8px solid white;
+		overflow-x:hidden ;
+
+	}
+	.live-update h2
+	{
+		text-align: center;
+	}
+	.options1{
+		overflow-x: hidden;
+	}
+	/*Partition 2 start*/
+	#partition2
+	{
+		position: relative;
+		width: 55%;
+		height: 800px;
+		/*background-color: pink;*/
+		/*box-shadow: inset 1px 1px 1px 1px red;*/
+
+	}
+
+
+	.location
+	{
+		height: 5%;
+		width: 95%;
+		position: relative;
+		float: left;
+		margin: auto;
+		left: 1.5%;
+		margin-top: 1%;
+		display: flex;
+		/*background-color: red;*/
+		border-radius: 8px;
+		border: 8px solid white;
+		
+
+	}
+	.location-icon
+	{
+		position: relative;
+		height: 30px;
+		width: 25%;
+		margin: auto;
+		float: left;
+		display: flex;
+		background-color: #BDD8F1;
+		border-radius: 6px;
+	}
+	.location-icon img
+	{
+		position: relative;
+		width: auto;
+		height: 70%;
+		padding-left:15px; 
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	.location-icon p
+	{
+		position: relative;
+		font-weight: bold;
+		margin: auto;	
+	}
+
+
+
+	.location-input
+	{
+		position: relative;
+		height:80%;
+		width:70% ;
+		margin: auto;
+		margin-left: 10px;
+		display: inline-block;
+		border-radius: 10px;
+		/*background-color: lime;*/
+	}
+
+
+	input[name="city_name"]
+	{
+		position: relative;
+		border: 1px solid #4a7fff;
+		border-radius: 5px;
+		height: 28px;
+		width:50%;
+		color: black;
+		font-size: 1em; 
+		padding-top: 2px;
+
+		margin-left: 20px;
+		/*margin: auto;*/
+		background-color: #BDD8F1;
+		text-transform:uppercase;
+		
+	}
+	input[name="insert_option"]
+	{
+		position: relative;
+		border: 1px solid #4a7fff;
+		border-radius: 5px;
+		height:30px;
+		width:15%;
+		color: black;
+		font-size: 1em;
+		margin-bottom: auto;
+		margin-left: 40px;
+		background-color: #BDD8F1;
+		font-family: cambria;
+		
+	}
+
+
+
+
+
+	.news-feed
+	{
+		height: 87%;
+		width: 95%;
+		position: relative;
+		float: left;
+		left: 1.5%;
+		margin-top: 1%;
+		background-color:#BDD8F1;
+		border-radius: 8px;
+		border: 8px solid white;
+		
+	}
+
+	#partition3
+	{
+		position: relative;
+		width: 20%;
+		height:800px;
+		/*background-color: lime;*/
+
+	}
+
+
+
+
+
+	#footer
+	{
+		width: 100%;
+		height: 30px;
+		position: relative;
+		margin: 0;
+		padding-top: 0;
+		background-color: transparent;
+	}
+
 	
 	#sidebar2
 	{
@@ -223,178 +411,3 @@ input::placeholder
 		padding-left: 5px;
 		font-size:1.2em;
 	}
-	/*Partition 2 start*/
-	#partition2
-	{
-		position: relative;
-		width: 50%;
-		height: 850px;
-		/* background-color: pink; */
-		/*box-shadow: inset 1px 1px 1px 1px red;*/
-
-	}
-	
-	.location
-	{
-		height: 5%;
-		width: 95%;
-		position: relative;
-		float: left;
-		margin: auto;
-		left: 1.5%;
-		margin-top: 1%;
-		display: flex;
-		/*background-color: red;*/
-		border-radius: 8px;
-		border: 8px solid white;
-	}
-
-	.location-icon
-	{
-		position: relative;
-		height: 30px;
-		width: 25%;
-		margin: auto;
-		float: left;
-		display: flex;
-		background-color: #BDD8F1;
-		border-radius: 6px;
-	}
-	.location-icon img
-	{
-		position: relative;
-		width: auto;
-		height: 70%;
-		padding-left:15px; 
-		margin-top: auto;
-		margin-bottom: auto;
-	}
-	.location-icon p
-	{
-		position: relative;
-		font-weight: bold;
-		margin: auto;	
-	}
-
-	.location-input
-	{
-		position: relative;
-		height:80%;
-		width:70% ;
-		margin: auto;
-		margin-left: 10px;
-		display: inline-block;
-		border-radius: 10px;
-		/*background-color: lime;*/
-	}
-
-
-	input[name="city_name"]
-	{
-		position: relative;
-		border: 1px solid #4a7fff;
-		border-radius: 5px;
-		height: 28px;
-		width:50%;
-		color: black;
-		font-size: 1em; 
-		padding-top: 2px;
-
-		margin-left: 20px;
-		/*margin: auto;*/
-		background-color: #BDD8F1;
-		text-transform:uppercase;
-		
-	}
-	input[name="insert_option"]
-	{
-		position: relative;
-		border: 1px solid #4a7fff;
-		border-radius: 5px;
-		height:30px;
-		width:15%;
-		color: black;
-		font-size: 1em;
-		margin-bottom: auto;
-		margin-left: 40px;
-		background-color: #BDD8F1;
-		font-family: cambria;
-		
-	}
-
-	.news-feed
-	{
-		height: 87%;
-		width: 95%;
-		position: relative;
-		float: left;
-		left: 1.5%;
-		margin-top: 1%;
-		background-color:#BDD8F1;
-		border-radius: 8px;
-		border: 8px solid white;
-		overflow-y: scroll;
-		
-	}
-	.news-feed ul{
-		padding:50px ;
-		padding-left: 90px;
-	}
-
-	/* Partition 3 Starts */
-
-	#partition3
-	{
-		position: relative;
-		width: 30%;
-		height: 850px;
-		/* background-color: lime; */
-
-	}
-	
-	.city-update
-	{
-		height: 46%;
-		width: 90%;
-		position: relative;
-		margin-top: 2%;
-		margin-right: auto;
-		margin-left: auto; 
-		margin-bottom: auto;
-		border-radius: 10px;
-		/*box-shadow: inset 1px 1px 1px 1px #62fdbb;*/
-		background-color:#BDD8F1;
-		border: 8px solid white;
-		overflow-x:hidden;
-
-	}
-	.city-update h2
-	{
-		text-align: center;
-	}
-	.national-update
-	{
-		height: 45%;
-		width: 90%;
-		margin-top: 2%;
-		margin-right: auto;
-		margin-left: auto; 
-		margin-bottom: auto;
-		position: relative;
-		border-radius: 8px;
-		background-color:#BDD8F1;
-		border: 8px solid white;
-		overflow-y:scroll ;
-		scrollbar-color: transparent;
-
-	}
-	.national-update h2
-	{
-		text-align: center;
-	}
-	.options1{
-		overflow-x: hidden;
-	}
-
-
-

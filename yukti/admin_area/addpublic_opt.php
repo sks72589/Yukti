@@ -71,10 +71,6 @@
 	
 	</tr>
 	<?php } ?>
-
-
-
-
 </table>
 
 
@@ -96,7 +92,7 @@
 		$option_image = $_FILES['option_image']['name'];
 		$option_image_tmp = $_FILES['option_image']['tmp_name'];
 		
-		move_uploaded_file($option_image_tmp,"option_images/$option_image");
+		move_uploaded_file($option_image_tmp,"admin_area/option_images/$option_image");
 	
 		 $insert_option = "insert into public_menu (option_title,option_icon) 
 		 values ('$option_title','$option_image')";
