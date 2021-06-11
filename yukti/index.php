@@ -52,9 +52,10 @@ $city_name= "City";
 						<form action="" method="get" enctype="multipart/form-data" id="location_form"> 
 											
 						<input type="text" name="city_name" placeholder="Enter your city name" required="required" />
-							<input type="submit" name="insert_option" value="SUBMIT"/>
+							<button type="submit" name="insert_option" value="Submit">Submit</button>
 						</form>
 					</div>
+					
 					<?php 
 					if (isset($_GET['insert_option'])) 
 						{
@@ -67,9 +68,26 @@ $city_name= "City";
 				</div>
 
 				<div class="news-feed">
+
+					<div class="center-article"></div>
+						<h2>What are the new symptoms</h2>
+						<p>
+							<ul>
+							<li>Do wear a cloth covering on your face at all times when you are not at home.</li>					
+							<li>Do wash your hands before you wear your mask. Only touch the earloops</li>
+							<li>Do stay informed of the situation as events and advisories are rapidly evolving.</li>
+							<li>Do practice good hand hygiene and wash your hands frequently.</li>
+							<li>Do cover your cough or sneeze. The best way to cough or sneeze is into your elbow and not your hands</li>
+							<li>Do work from home. Do leave your home only for essential reasons, such as buying food or medications.</li>
+							<li>Do cancel elective dental, medical, recreational and non-essential appointments as these can interfere with social distancing.</li>
+							<li>Do move away from others who cough or sneeze.</li>
+							<li>Do wipe down all surfaces you come into contact with.</li>
+							<li>Do begin buying a 60-90 day supply of supplies and drugs.</li>
+							</ul>
+						</p>
+
 					<h2>What are the new symptoms</h2>
-					<ul>
-						
+					<ul>						
 					<li>fever</li>
 					<li>dry cough</li>
 					<li>tiredness</li>
